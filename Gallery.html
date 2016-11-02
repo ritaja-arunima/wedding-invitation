@@ -1,0 +1,43 @@
+---
+layout: invitation
+title: Gallery
+---
+<style type="text/css">
+a {
+	color: #FFF;
+}
+a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+.thumbnails img {
+	height: 80px;
+	border: 4px solid #555;
+	padding: 1px;
+	margin: 0 10px 10px 0;
+}
+
+.thumbnails img:hover {
+	border: 4px solid #00ccff;
+	cursor:pointer;
+}
+
+.preview img {
+	border: 4px solid #444;
+	padding: 1px;
+	width: 800px;
+}
+</style>
+
+<div class="gallery" align="center">
+	<div class="thumbnails">
+		<img onmouseover="preview.src=castle.src" name="castle" src="images/castle.jpg" alt=""/>
+		<img onmouseover="preview.src=engagement.src" name="engagement" src="images/engagement.jpg" alt=""/>
+		<img onmouseover="preview.src=pujo.src" name="pujo" src="images/pujo.jpg" alt=""/>
+		<img onmouseover="preview.src=venice.src" name="venice" src="images/venice.jpg" alt=""/>
+    <img onmouseover="preview.src=winter.src" name="winter" src="images/winter.jpg" alt=""/>
+	</div><br/>
+  <div class="preview" align="center">
+    <img name="preview" src="images/winter.jpg" alt=""/>
+  </div>
+</div>
